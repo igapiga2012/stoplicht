@@ -1,0 +1,19 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables><block type="pxt-on-start" id="]!ie~-8q=`OY0lQ/[E:1" x="0" y="0"><statement name="HANDLER"><block type="set_traffic_light_led" id="X.TU4U76s;A}?l!;XkyD"><field name="ledColour">Kitronik_STOPbit.LightColours.Red</field><field name="illumination">Kitronik_STOPbit.DisplayLights.On</field></block></statement></block><block type="device_forever" id="Yq**=M%|`IhYLs+ftM8m" x="667" y="167"><statement name="HANDLER"><block type="controls_if" id="5Rf,qXVRu!$SC~`Dv3E`"><value name="IF0"><shadow type="logic_boolean" id="5VdjqGOY,OeulB4)8ysp"><field name="BOOL">TRUE</field></shadow><block type="device_get_button2" id="HUrbNzX7-G`m~/|eM/CB"><field name="NAME">Button.B</field></block></value><statement name="DO0"><block type="set_traffic_light_state" id="$oB!PqQbxxzJTFNxHbdT"><field name="lightState">Kitronik_STOPbit.LightStates.Go</field><next><block type="device_show_leds" id="3f$=@!q-sgD~k`u4k=]i"><field name="LEDS">`
+        . . # . . 
+        . # . . . 
+        # # # # # 
+        . # . . . 
+        . . # . .
+        `</field><next><block type="device_pause" id="#uLPwBg6IuD)p??[M0.j"><value name="pause"><shadow type="timePicker" id="d/SkV8j]pzt?nJ6Q)0(r"><field name="ms">2000</field></shadow></value><next><block type="set_traffic_light_state" id="mjuMR98k,!s-[O(`yh/f"><field name="lightState">Kitronik_STOPbit.LightStates.ReadyToStop</field><next><block type="device_show_leds" id="$2jn9hrTpj!-`=*V*{w~"><field name="LEDS">`
+        . . # . . 
+        . . # . . 
+        . . # . . 
+        . . # . . 
+        . . # . .
+        `</field><next><block type="device_pause" id="3tSnkCgR=WV*@OjfxgOr"><value name="pause"><shadow type="timePicker" id="_qsie;Vf{70+?;-um[6M"><field name="ms">2000</field></shadow></value><next><block type="set_traffic_light_state" id="F:295=C|i@gTMZ}ZClWO"><field name="lightState">Kitronik_STOPbit.LightStates.Stop</field><next><block type="device_show_leds" id="b[Qtw6E(,bXbn1m*wK8I"><field name="LEDS">`
+        # . . . # 
+        . # . # . 
+        . # # . . 
+        . # . # # 
+        # . . . #
+        `</field><next><block type="device_pause" id="9ELhTEtHY7D1a|v8J`4U"><value name="pause"><shadow type="timePicker" id="6gBe`iz,e_v}nu+(1|i#"><field name="ms">2000</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></statement></block></xml>
